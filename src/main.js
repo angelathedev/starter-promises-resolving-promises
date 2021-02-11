@@ -1,6 +1,7 @@
 const { welcome, goodbye, tell } = require("../utils/fortune-teller");
 
-const promise = tell(question);
+const question = "Will the weather be nice today?";
+const promise = tell();
 promise.then((fortune) => {
   console.log(question);
   console.log(fortune);
